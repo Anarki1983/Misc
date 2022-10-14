@@ -1,7 +1,7 @@
 type middleware func(http.Handler) http.Handler
 
 type Rounter struct {
-	middlewareChain []middleware // use middleware
+	middlewareChain []middleware // 在use後加入
 	mux map[string] http.Handler // map handler with route
 }
 
