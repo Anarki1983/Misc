@@ -6,7 +6,7 @@ type Rounter struct {
 }
 
 func NewRouter() *Router{
-    return &Router{}
+	return &Router{}
 }
 
 func (r *Router) Use(m middleware) {
